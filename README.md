@@ -6,7 +6,7 @@ A collection of custom skills for [Claude Code](https://claude.ai/code) — Anth
 
 ### `/session-handoff`
 
-Manage session transitions when approaching context limits. Documents your progress, updates persistent memory, and generates a ready-to-paste prompt for the next session — so you never lose context when Claude's window resets.
+Manage session transitions when approaching context limits, after completion of a feature or at the end of the day. Documents your progress, updates persistent memory, and generates a ready-to-paste prompt for the next session — so you never lose context when Claude's window resets.
 
 **Features:**
 - Auto-detects working directory and suggests smart save paths
