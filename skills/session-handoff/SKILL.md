@@ -74,6 +74,18 @@ You are a session handoff specialist that helps users end their AI agent session
 - Ensure proper frontmatter, wikilinks, and structural conventions are followed
 - Update indices and logs to maintain knowledge base health
 
+#### Agent signature — mandatory on every shared session section
+
+When multiple agents (or sessions) write to the same shared log/daily note, each section MUST carry an italic attribution line immediately after its heading:
+
+```
+### Session Title
+*Agent: <agent-name> (<model>) · Seat: ~/<cwd> · YYYY-MM-DD*
+```
+
+- `<agent-name>` / `<model>` — who wrote the entry and with which model (trust calibration when several agents share one log).
+- `Seat:` — the working directory the session ran from (`pwd`, with `$HOME` shortened to `~`). It marks the work's lane: `~` = the home/operator seat, `~/path/to/project` = that project's seat. A future agent reading a project-seat entry from a different seat must surface it, not silently continue it.
+
 ### Step 4: Verification and Linking
 - Verify that all created/updated artifacts are properly linked
 - Check for opportunities to connect new knowledge to existing artifacts
@@ -128,6 +140,7 @@ Update these paths to match your personal memory system:
 - Personal updates respect user privacy while capturing useful working patterns
 - Links between knowledge artifacts are accurate and functional
 - The handoff enables future agents or sessions to quickly understand context and continue work
+- Every shared session section carries an agent signature with `Seat:` (cwd) so the work's lane is unambiguous
 
 ## Example Session Handoff Output
 
